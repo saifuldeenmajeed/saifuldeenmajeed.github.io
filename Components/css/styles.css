@@ -11,7 +11,8 @@
 }
 html{
     scroll-behavior: smooth;
-    scrollbar-track-color: #06ccc9;
+    scrollbar-color: #06ccc9;
+  
 }
 body{
     --body-bg-color: #1d1d1d;
@@ -22,17 +23,21 @@ body{
     --section1-job-color:#EAEBED;
     --switch-btn:#EAEBED;
     --mystory-p: #EAEBED;
-    --description-p: #adabab;
-    --blog-heading-p: #adabab;
+    --myabout-h1:#3a3939;
+    --bg-section-text-h1: #3a3939;
+    --description-p: #EAEBED;
+    --blog-heading-p: #EAEBED;
     --blog-wrapper: #242424;
     --blog-wrapper-header-h3:#EAEBED;
+    --blog-wrapper-h4:#01f1ed86;
     --blog-wrapper-shadow: #3131315c;
-    --blog-section-bg-h1: #3a3939;
+    --blog-section-bg-h1: #eaebed78;
     --blog-wrapper-p: #9d9d9d;
     --blog-wrapper-border: #2E424D;
-    --contact-section-p: #9d9d9d;
+    --contact-section-p: #EAEBED;
     --contact-btn:#06CCC9;
     --theme-ball:#06CCC9;
+    --anchor-color: #EAEBED;
 
     color: #2E424D;
      font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto", 
@@ -51,10 +56,13 @@ body.white{
     --section1-job-color:#2E424D;
     --switch-btn:#2E424D;
     --mystory-p: #2E424D;
+    --myabout-h1:#c1c1c1;
+    --bg-section-text-h1: #7d7c7c;
     --description-p: #2E424D;
     --blog-heading-p: #2E424D;
     --blog-wrapper: #EAEBED;
     --blog-wrapper-header-h3:#2E424D;
+    --blog-wrapper-h4:#069a9886;
     --blog-wrapper-shadow: #EAEBED60;
     --blog-section-bg-h1: #c1c1c1;
     --blog-wrapper-p: #9d9d9d;
@@ -62,12 +70,14 @@ body.white{
     --contact-section-p: #2E424D;
     --contact-btn:#06CCC9;
     --theme-ball:#06CCC9;
+    --anchor-color: #2E424D;
+
 
 
     color: #2E424D;
      font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto", 
    "Oxygen","Ubuntu","Helvetica Neue", Arial, sans-serif; 
-
+    width: 100%;
     background: var(--body-bg-color);
 }
 
@@ -76,7 +86,7 @@ body.white{
 
 /* header starts here */
 header{
-    border-bottom: 1px solid rgb(59, 58, 58);
+    border-bottom: 1px solid #06ccc970;
     background: var(--header-bg-color);
     height: auto;
     position: fixed;
@@ -90,10 +100,11 @@ header{
     margin: auto;
 }
 nav{
-    height: 12vh;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .logo{
     width: 30px;
@@ -105,6 +116,7 @@ nav{
     color: #fff;
     cursor: pointer;
     transition: .3s linear;
+    margin-right: 15px;
 }
 .toggle-icon .fas:hover{
     transform: scale(0.8) rotate(-45deg);
@@ -131,7 +143,8 @@ ul.nav-links li a{
     text-decoration: none;
     color: #adabab;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 ul.nav-links li a:hover{
     color: var(--logo-color);
@@ -181,10 +194,11 @@ ul.nav-links li a:hover{
     position: absolute;
     width: 100%;
     height: 5px;
-    background: #3a3939;
+    background: #3a393993;
     left: 0;
     bottom: 0;
 }
+
 .container{
     height: 100vh;
     width: 90%;
@@ -200,6 +214,7 @@ ul.nav-links li a:hover{
     font-size: 2.5rem;
     color: var(--about-text-h2);
     letter-spacing: 3px;
+    
 }
 .about-desc img{
     width: 40px;
@@ -454,12 +469,24 @@ ul.nav-links li a:hover{
 /* ==================== */
 /* section 2 starts here */
 .section-2{
-    width: 85%;
+    width: 80%;
     margin: 70px auto 0;
+    position: relative;
+}
+.section-2::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: #3a393993;
+    left: 0;
+    bottom: -100px;
 }
 .my-about-wrapper .about{
     font-size: 5rem;
-    color: #3a3939;
+    color: var(--bg-section-text-h1);
+    filter: opacity(0.2);
+
 }
 .my-self{
     width: 100%; 
@@ -505,10 +532,10 @@ ul.nav-links li a:hover{
     margin-bottom: 35px;
 }
 .para1 img{
-    width: 150px;
+    width: 500px;
     height: auto;
     filter: opacity(0.3);
-    transform: rotate(-45deg);
+    transform: rotate(-15deg);
     position: absolute;
     right: 20px;
     top: -130px;
@@ -526,12 +553,21 @@ ul.nav-links li a:hover{
 .section-3{
     width: 85%;
     margin: 100px auto;
-    
+    position: relative;
+}
+.section-3::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: #3a393993;
+    left: 0;
+    bottom: -10px;
 }
 .text-skills{
     position: absolute;
     font-size: 7rem;
-    color: #3a3939;
+    color: var(--bg-section-text-h1);
     filter: opacity(0.2);
 }
 .acquired-skills{
@@ -581,6 +617,17 @@ ul.nav-links li a:hover{
 .section-4{
     width: 90%;
     margin: auto;
+    position: relative;
+}
+.section-4::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: #3a393993;
+    left: 0;
+    bottom: -100px;
+    
 }
 .blog-description{
     width: 100%;
@@ -613,11 +660,13 @@ ul.nav-links li a:hover{
     top: -130px;
     left: 0;
     z-index: -1;
-    color:var(--blog-section-bg-h1);
+    color:var(--bg-section-text-h1);
+    filter: opacity(0.2);
+
 }
 .blog-wrapper{
     width: 100%;
-    height: 300px;
+    height: 175px;
     background: var(--blog-wrapper);
     box-shadow: 0px 0px 16px 10px var(--blog-wrapper-shadow);
     display: flex;
@@ -625,18 +674,17 @@ ul.nav-links li a:hover{
     flex-direction: column;
     transition: border .5s linear;
     cursor: pointer;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 15px;
+    margin-bottom: 25px;
     position: relative;
     border-color: var(--blog-wrapper-border);
-    border-style:dashed;
-    border-width:medium;
+    border-style: solid;
+    border-width: 2px;
     border-radius: 3%;
+    
 }
 .blog-wrapper:hover{
     box-shadow: 0px 0px 16px 10px #00e7f360;
-    height: 280px;
-    border-radius: 10%;
 }
 
 .blog-wrapper a{
@@ -648,17 +696,25 @@ ul.nav-links li a:hover{
 .blog-wrapper h3{
     font-size: 1rem;
     position: absolute; 
+    width: 250px;
     top: 0; 
     left: 0; 
     text-align:left;
-    margin-left: 7px;
-    margin-top: 7px;
-    color: var(--blog-wrapper-header-h3)
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: var(--blog-wrapper-header-h3);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
 }
 .blog-wrapper h4{
     font-size: 0.4rem;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     margin: 0 1px 0 0;
-    color:#06ccc986;
+    color: var(--blog-wrapper-h4);
 }
 
 .blog-wrapper p{
@@ -674,7 +730,7 @@ ul.nav-links li a:hover{
 
 .contact-section{
     width: 90%;
-    margin: 50px auto 0;
+    margin: 80px auto 0;
     position:relative;
     
 }
@@ -908,9 +964,12 @@ footer{
 }
   
 .fa-sun {
-    color: #06CCC9;
+    color: #ffee00;
 }
 
+.anchor{
+    background-color: var(--anchor-color);
+}
 
 
 /* media query */ /* media query for big screens start here */
@@ -960,7 +1019,7 @@ footer{
         width: 80px;
     }
     .about-desc #name{
-        max-width: 700px;
+        max-width: 100%;
         font-size: 6rem;
     }
     .about-desc #job{
@@ -977,7 +1036,7 @@ footer{
     }
     /* section 2 */
     .my-self{
-        width: 400px;
+        width: 100%;
         font-size: 2.5rem;
         top: -130px;
         left: -55px;
@@ -1022,12 +1081,12 @@ footer{
         font-size: 2rem;
     }
     .description p{
-        width: 500px; 
+        width: 100%; 
         margin: 20px 0;
         font-size: 1.2rem;
     }
     .description pre{
-        width: 500px; 
+        width: 100%; 
         margin: 5px 0;
         font-size: 1rem;
         color:#06CCC9;
@@ -1038,14 +1097,14 @@ footer{
     }
     /* blog section starts here */
     .blog-description{
-        width: 95%;
+        width: 100%;
         margin: 0 auto 50px;
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
     }
     .blog-heading{
-        width: 600px;
+        width: 100%;
     }
     .blog-heading h3{
         font-size: 2rem;
@@ -1054,17 +1113,22 @@ footer{
         font-size: 1.2rem;
     }
     .blog-section h1{
-        font-size: 20rem;
+        font-size: 15rem;
         top: -250px;
     }
     .blog-wrapper{
-        width: 350px;
+        width: 35%;
+        margin: 10px;
     }
     .blog-wrapper h3{
-        font-size: 2rem;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        
     }
     .blog-wrapper h4{
-        font-size: 0.7rem;
+        font-size: 1rem;
+        margin-top: 2rem;
+        
     }
 
     /* contact section starts here */
@@ -1078,15 +1142,18 @@ footer{
         font-size: 2.5rem;
     }
     .contact-section p{
-        width: 600px;
+        width: 100%;
         font-size: 1.2rem;
         line-height: 1.8rem;
+        margin-top: 15px;
+        margin-bottom: 13px;
     }
     .contact-section h1{
         font-size: 13rem;
         left: -150px;
         top: 200px;
     }
+    
     .contact-form-wrapper{
         flex-direction: row;
         position: relative;
@@ -1119,10 +1186,11 @@ footer{
         height: 315px;
     }
     .footlogo{
-        width: 900px;
-        height: 700px;
+        width: 800px;
+        height: 500px;
         position: relative;
-        top: -100px;
+        top: 50px;
+        
     }
 }
 
@@ -1133,7 +1201,7 @@ footer{
 /* media query for medium screen starts here */
 
 /* from 500 pixels and max */
-@media screen and (min-width: 630px) and (max-width: 1023px) {
+@media screen and (max-width: 996px) {
     header{
         width: 100%;
     }
@@ -1198,24 +1266,44 @@ footer{
     }
     /* blog section */
     .blog-section h1{
-        font-size: 10rem;
+        font-size: 5rem;
         top: -130px;
     }
     .blog-wrapper{
-        width: 50%;
+        width: 100%;
+        margin: 10px;
     }
     .blog-wrapper h3{
-        font-size: 2rem;
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        
     }
     .blog-wrapper h4{
         font-size: 1.5rem;
+        margin-top: 1rem;
+        
     }
     .blog-wrapper p{
         font-size: 16px;
     }
+
     .logo-animation{
         display: none;
     }
+    .blog-heading{
+        width: 100%;
+    }
+    .blog-heading h3{
+        font-size: 2rem;
+    }
+    .blog-heading p{
+        font-size: 1.2rem;
+    }
+    .blog-section h1{
+        font-size: 9rem;
+        top: -250px;
+    }
+
     .footlogo{
         width: auto;
         height: 500px;
@@ -1223,6 +1311,143 @@ footer{
         top: -100px;
         object-fit:contain;
         size: 20%;
-        display: block;
+        display: none;
+    }
+    .contact-section h2{
+        font-size: 2rem;
+        
+    }
+    .contact-section p{
+        width: 100%;
+        font-size: 1rem;
+        margin-top: 15px;
+        margin-bottom: 13px;
+        line-height: 1.5rem;
     }
 }
+
+
+
+/* from 500 pixels and max */
+@media screen and (max-width: 768px){
+    header{
+        width: 100%;
+        height: 9vh;
+    }
+
+    .logo{
+        vertical-align: middle;
+        margin-left: 50%;
+    }
+    .section-2::after{
+        bottom:0;
+    }
+    .section-4::after{
+        display: none;
+    }
+    .nav-center{
+        width: 100%;
+    }
+    .about-desc {
+        margin-top: 15px;
+    }
+    .about-desc h2{
+        font-size: 2.7rem;
+
+    }
+    .about-desc #name{
+        font-size: 4rem;
+    }
+    .about-desc #job{
+        width:100%;
+        font-size: 2rem;
+    }
+    .achievement h1{
+        font-size: 3rem;
+    }
+
+    .about-desc img{
+        width: 50px;
+        height: auto;
+    }
+
+    /* section 2 starts here */
+
+    .my-about-wrapper .about{
+        font-size: 3rem;
+        position: absolute;
+    }
+    .my-self{
+        width: 100%;
+        font-size: 2.2rem;
+    }
+    .my-self::before, .my-self::after{
+        display: none;
+    }
+    /* my story desc */
+    .my-story p{
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .para1{
+        margin: 50px 0 30px;
+    }
+    .para1 img{
+        display: none;
+    }
+    /* skills images */
+    .text-skills{
+        font-size: 3rem;
+    }
+    .description p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .acquired-skills img{
+        width: 60%;
+    }
+    /* blog section */
+
+    .blog-section h1{
+        font-size: 3rem;
+    }
+    .blog-wrapper{
+        width: 100%;
+        margin: 10px;
+    }
+    .blog-wrapper h3{
+        font-size: 85%;
+        width: 75%;
+        margin-top: 30px;
+
+    }
+    .blog-wrapper h4{
+        margin-top: 25px;
+        font-size: 80%;
+    }
+    .blog-wrapper p{
+        font-size: 16px;
+    }
+    .logo-animation{
+        display: none;
+    }
+    
+    .footlogo{
+        display: none;
+    }
+    .contact-section h2{
+        font-size: 2rem;
+        
+    }
+    .contact-section p{
+        width: 100%;
+        font-size: 1rem;
+        margin-top: 15px;
+        margin-bottom: 13px;
+        line-height: 1.5rem;
+    }
+}
+
+
+
