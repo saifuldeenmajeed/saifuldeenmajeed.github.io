@@ -95,6 +95,9 @@ header{
     top: 0;
     z-index: 3;
 }
+
+
+
 .nav-center{
     width: 90%;
     margin: auto;
@@ -106,6 +109,10 @@ nav{
     align-items: center;
     
 }
+
+
+
+
 .logo{
     width: 30px;
     height: 50px;
@@ -118,6 +125,7 @@ nav{
     transition: .3s linear;
     margin-right: 15px;
 }
+
 .toggle-icon .fas:hover{
     transform: scale(0.8) rotate(-45deg);
     transition: all .3s linear;
@@ -141,7 +149,7 @@ ul.nav-links li{
 }
 ul.nav-links li a{
     text-decoration: none;
-    color: #adabab;
+    color: #EAEBED;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
@@ -149,6 +157,7 @@ ul.nav-links li a{
 ul.nav-links li a:hover{
     color: var(--logo-color);
 }
+
 .active{
     font-size: 1.2rem;
     color: #06CCC9;
@@ -664,6 +673,13 @@ ul.nav-links li a:hover{
     filter: opacity(0.2);
 
 }
+.blog-lang{
+    font-size: 1rem;
+    margin-left: 1px;
+    margin-top: 3rem;
+    color: var(--blog-wrapper-h4);
+}
+
 .blog-wrapper{
     width: 100%;
     height: 175px;
@@ -1026,7 +1042,7 @@ footer{
         font-size: 2.5rem;
     }
     .contact-button{
-        max-width: 220px;
+        max-width: 250px;
     }
     .achievement h1{
         font-size: 4.5rem;
@@ -1211,6 +1227,7 @@ footer{
     .about-desc h2{
         font-size: 2.7rem;
     }
+
     .about-desc #name{
         font-size: 4rem;
     }
@@ -1227,7 +1244,9 @@ footer{
         width: 50px;
         height: auto;
     }
-
+    .contact-button{
+        max-width: 100%;
+    }
     /* section 2 starts here */
 
     .my-about-wrapper .about{
@@ -1332,7 +1351,7 @@ footer{
 @media screen and (max-width: 768px){
     header{
         width: 100%;
-        height: 9vh;
+        height: 10vh;
     }
 
     .logo{
@@ -1371,6 +1390,9 @@ footer{
         height: auto;
     }
 
+    .contact-button{
+        max-width: 100%;
+    }
     /* section 2 starts here */
 
     .my-about-wrapper .about{
@@ -1417,10 +1439,13 @@ footer{
         margin: 10px;
     }
     .blog-wrapper h3{
-        font-size: 85%;
+        font-size: 95%;
         width: 75%;
         margin-top: 30px;
 
+    }
+    .blog-lang{
+        margin-top: 1rem;
     }
     .blog-wrapper h4{
         margin-top: 25px;
