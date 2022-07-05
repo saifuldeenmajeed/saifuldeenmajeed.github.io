@@ -147,6 +147,10 @@ ul.nav-links li{
     padding: 1rem 0;
     text-align: center;
 }
+ul.nav-links li .theme{
+    margin:0;
+    margin-left: 47%;
+}
 ul.nav-links li a{
     text-decoration: none;
     color: #EAEBED;
@@ -1001,6 +1005,7 @@ footer{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
     }
     .links-container {
         height: auto !important;
@@ -1218,11 +1223,7 @@ footer{
 
 /* from 500 pixels and max */
 @media screen and (max-width: 1023px) {
-    header{
-        width: 100%;
-        height: 10vh;
-        
-    }
+
     .logo{
         margin-left: 5rem;
     }
@@ -1348,17 +1349,16 @@ footer{
     .section-4::after{
         bottom:-50px;
     }
+    .section-2::after{
+        bottom:-10px;
+    }
 }
 
 
 
 /* from 500 pixels and max */
 @media screen and (max-width: 768px){
-    header{
-        width: 100%;
-        height: 10vh;
-        
-    }
+
     .logo{
         margin-left: 5rem;
     }
@@ -1491,7 +1491,11 @@ footer{
         margin-bottom: 13px;
         line-height: 1.5rem;
     }
+    .section-3{
+        width:50%;
+        min-height: 100vh;
+        margin-left: 7rem;
+        color:#06CCC9;
+
+    }
 }
-
-
-
