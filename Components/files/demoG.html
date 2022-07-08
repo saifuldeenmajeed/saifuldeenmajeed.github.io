@@ -4,33 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S.A.M | PROJECTTITLE DEMO</title>
-    <link rel="icon" type="image/x-icon" href="/Components/images/logo.ico">
-    <link rel="stylesheet" href="/Components/css/all.min.css">
-    <link rel="stylesheet" href="/Components/css/styles.css"> 
+    <title>S.A.M | PROJECT DEMO</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo.ico">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/views_styles.css"> 
 </head>
 
 <body>
     <header>
         <div class="nav-center">
             <nav>
-                <a href="#"><img src="/Components/images/logo.png" alt="logo" class="logo"></a>
+                <a href="#"><img src="../images/logo.png" alt="logo" class="logo"></a>
                 <!-- toggle btns -->
                 <div class="toggle-icon">
                     <span class="toggle-btn bars"><i class="fas fa-bars"></i></span>
                     <span class="toggle-btn times"><i class="fas fa-times"></i></span>
-
                 </div>
             </nav>
-
-
 
             <!-- ul container -->
             <div class="links-container">
                 <div class="nav-link-wrapper">
                     <ul class="nav-links">
-                        <li>                        
-                            <div>
+                        <li>
+                            <a href="#home" class="link">
+                                <i class="fas fa-home active"></i>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <div class="theme">
                                 <input type="checkbox" class="checkbox" id="checkbox">
                                 <label for="checkbox" class="label">
                                     <i class="fas fa-moon"></i>
@@ -39,9 +42,11 @@
                                 </label>
                             </div>
                         </li>
+
                     </ul>
                 </div>
-            </div>       
+                
+            </div>        
         </div> 
         <!-- nav center div above -->
     </header>
@@ -49,13 +54,21 @@
 
     <!--Project Details Section Starts here-->
         <!-- section 1 starts below -->
-        
-        <section class="section-1" id="home">
-            <div class="container">
-               <h1 style="color: #00918e; font-size:xx-large; text-align:center">Projects Demo Coming Soon!</h1>
-            </div>
-    
-        </section>
+        <main>
+            
+            <input id="tab5" type="radio" name="tabs" checked>
+            <label for="tab5">Project Status</label>
+
+            <section id="content5">
+                <p>
+                    <img class="progress_img" src="/Components/images/warning.gif">
+                </p>
+                <p>
+                    <strong><em>The demonstration of the selected code is not yet uploaded. Please check again later.</em> 🫤</strong>
+                </p>
+            </section>
+            
+        </main>
         
 
 
@@ -76,6 +89,6 @@
     AOS.init({ duration : 1500, easing: 'ease-in-out'});
     </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="/Components/js/index.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 </html>

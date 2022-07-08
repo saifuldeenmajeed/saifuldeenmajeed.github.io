@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.A.M | YALLA TRAVEL DEMO</title>
+    <link rel="icon" type="image/x-icon" href="/">
+    <link rel="stylesheet" href="../../css/all.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/views_styles.css"> 
+</head>
+
+<body>
+    <header>
+        <div class="nav-center">
+            <nav>
+                <a href="#"><img src="../../images/logo.png" alt="logo" class="logo"></a>
+                <!-- toggle btns -->
+                <div class="toggle-icon">
+                    <span class="toggle-btn bars"><i class="fas fa-bars"></i></span>
+                    <span class="toggle-btn times"><i class="fas fa-times"></i></span>
+                </div>
+            </nav>
+
+            <!-- ul container -->
+            <div class="links-container">
+                <div class="nav-link-wrapper">
+                    <ul class="nav-links">
+                        <li>
+                            <a href="#home" class="link">
+                                <i class="fas fa-home active"></i>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <div class="theme">
+                                <input type="checkbox" class="checkbox" id="checkbox">
+                                <label for="checkbox" class="label">
+                                    <i class="fas fa-moon"></i>
+                                    <i class='fas fa-sun'></i>
+                                    <div class='ball'></div>
+                                </label>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                
+            </div>        
+        </div> 
+        <!-- nav center div above -->
+    </header>
+
+
+    <!--Project Details Section Starts here-->
+        <!-- section 1 starts below -->
+        <main>
+            
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label for="tab1">Description</label>
+                
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2">Languages</label>
+                
+            <input id="tab3" type="radio" name="tabs">
+            <label for="tab3">Demo</label>
+                
+            <input id="tab4" type="radio" name="tabs">
+            <label for="tab4">Project Status</label>
+                
+            <section id="content1">
+                <div class="progress-container">
+                    <div class="progress_done"></div>
+                    <span class="progress-text">
+                        Done
+                    </span>
+                </div>
+                <p>
+                    <strong> <em>Yalla Travel</em></strong>, airlines reservation system, where users can search, book, or reserve flights. 
+                    The system uses API to retrieve flight offers from a Global Distribution System (GDS), then sorts such data and 
+                    returns the best flights, based on a combination of the cheapest and best route flights.</br>
+                    Users can sign in/sign up to make use of many features, such as: Google Calender Sync, Share Flights, Add Companions, and many more.</br>
+                    The system is programmed in multiple languages, providing a friendly and rich user interface and a quick response time. 
+                </p>
+            </section>
+            
+            <section id="content2">
+                <p>
+                    
+                    <strong style="color:#06CCC9;">&#9507;</strong>&nbsp;Backend:  Python, Django.</br>
+                    <strong style="color:#06CCC9;">&#9507;</strong>&nbsp;Frondend: Html, CSS.</br>
+                    <strong style="color:#06CCC9;">&#9507;</strong>&nbsp;Database: Dajngo Models & MySql.</br>
+                    
+                </p>
+
+            </section>
+                
+            <section id="content3">
+                <div class="course-preview">
+                    <img src="demo.gif">
+                </div>
+                
+            </section>
+                
+            <section id="content4">
+                <p>
+                    <img class="progress_img" src="../../images/done.png">
+                </p>
+                <p>
+                    The project is completed and tested. To view the code, please <a href="/index.html#contact"> contact</a> the developer.
+                </p>
+            </section>
+            
+        </main>
+        
+
+
+    <!--Project Details Section Ends here-->
+
+
+    <!-- footer section -->
+    <footer>
+        <div class="footer-content">
+            <p>Copryright &copy; Built By <span><strong><em>Saifuldeen Ali Majeed</em></strong></span> 2022 | All Right Reserved.</p>
+        </div>
+    </footer>
+
+    
+    <!-- scripts are down below -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>                        
+    <script>
+    AOS.init({ duration : 1500, easing: 'ease-in-out'});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="../../js/index.js"></script>
+</body>
+</html>
