@@ -305,76 +305,6 @@ input:checked + label {
 	width: 100%;
 }
 
-.progress-container {
-	position: absolute;
-	top: 15px;
-	right: 30px;
-    text-align: right;
-	width: 30%;
-}
-
-.progress {
-	background-color: #ddd;
-	border-radius: 3px;
-	width: 100%;
-}
-
-.progress_done {
-	background-color: #ddd;
-	border-radius: 3px;
-	width: 30%;
-}
-
-.progress_done::after {
-	border-radius: 3px;
-	background-color: #11ff00;
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 20%;
-	width: 100%;
-}
-
-.progress-text {
-	font-size: 10px;
-	opacity: 0.6;
-	letter-spacing: 1px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;   
-}
-
-.course {
-	background-color: #EAEBED;
-	border-radius: 10px;
-	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-	display: flex;
-	max-width: 100%;
-	margin: 20px;
-	overflow: hidden;
-	width: 100%;
-}
-
-.course h6 {
-	opacity: 0.7;
-    letter-spacing: 0.5px;
-    margin: 10px 0;
-    margin-top: 25px;
-    font-size: 1rem;
-}
-.desc {
-    opacity: 0.7;
-    letter-spacing: 0.5px;
-    font-size: 1.2rem;
-}
-
-.course h2 {
-    margin: 10px 0;
-	letter-spacing: 1px;
-	text-transform:initial;
-    font-size: 1.25rem;
-}
-
-
 
 .demo{
     object-fit:contain;
@@ -478,6 +408,71 @@ footer{
 .anchor{
     background-color: var(--anchor-color);
 }
+
+
+
+/* contact me button */
+.contact-button{
+    margin: 25px 0 15px;
+    text-decoration: none;
+    color: #06CCC9;
+    width: 100%;
+    max-width: 100%;
+    line-height: 50px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    position: relative;
+    letter-spacing: 1px;
+}
+.contact-button div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    color: var(--contact-btn);
+}
+.contact-button span.bg{
+    background: #06CCC9;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: -5%;
+    top: 0;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transform: skewX(-19deg);
+    -ms-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+}
+.contact-button:hover span.bg{
+    width: 110%;
+}
+.contact-button span.base{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border: 1px solid #06CCC9;
+}
+.contact-button span.text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: var(--contact-btn);
+}
+.contact-button:hover span.text{
+    color: #1d1d1d;
+}
+
 
 
 /* media query */ /* media query for big screens start here */
