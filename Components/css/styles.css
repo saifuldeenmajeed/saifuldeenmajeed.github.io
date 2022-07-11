@@ -1297,6 +1297,12 @@ footer{
     .acquired-skills img{
         width: 270px;
     }
+    .description pre{
+        width: 100%; 
+        margin: 5px 0;
+        font-size: 1rem;
+        color:#06CCC9;
+    }
     /* blog section */
     /* blog section starts here */
     .blog-description{
@@ -1384,7 +1390,12 @@ footer{
         font-size: 1.5rem;
     }
 
-
+    .description pre{
+        width: 100%; 
+        margin: 5px 0;
+        font-size: 1rem;
+        color:#06CCC9;
+    }
     .section-2::after{
         bottom:0;
     }
