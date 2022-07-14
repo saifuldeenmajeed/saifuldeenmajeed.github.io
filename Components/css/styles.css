@@ -322,6 +322,9 @@ ul.nav-links li a:hover{
     color: var(--contact-btn);
 }
 .contact-button:hover span.text{
+    color: #1d1d1d;
+}
+.contact-button .linkedin:hover span.text{
     color: #0072b1;
 }
 .contact-button .linkedin{
