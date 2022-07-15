@@ -1393,18 +1393,48 @@ footer{
         font-size: 1.5rem;
     }
 
-    .description pre{
-        width: 100%; 
-        margin: 5px 0;
-        font-size: 1rem;
-        color:#06CCC9;
-    }
+
     .section-2::after{
         bottom:0;
     }
     .section-4::after{
         display: none;
     }
+    
+    .section-3{
+        max-width:100%;
+        min-height: 70vh;
+        color:#06CCC9;
+
+    }
+
+    .description .pre{
+        width: 80%;
+        margin-left: 3rem;
+        font-size: 1rem;
+        line-height: 2rem;
+        color:#06CCC9;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        font-family: monospace;
+    }
+    
+     /* skills images */
+     .text-skills{
+        font-size: 5rem;
+    }
+    .description p{
+        width: 75%;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    .acquired-skills img{
+        width: 50%;
+    }
+   
+
     .nav-center{
         width: 100%;
     }
@@ -1459,17 +1489,6 @@ footer{
     .para1 img{
         display: none;
     }
-    /* skills images */
-    .text-skills{
-        font-size: 5rem;
-    }
-    .description p{
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
-    .acquired-skills img{
-        width: 60%;
-    }
     /* blog section */
 
     .blog-section h1{
@@ -1513,11 +1532,5 @@ footer{
         margin-bottom: 13px;
         line-height: 1.5rem;
     }
-    .section-3{
-        width:50%;
-        min-height: 100vh;
-        margin-left: 7rem;
-        color:#06CCC9;
 
-    }
 }
