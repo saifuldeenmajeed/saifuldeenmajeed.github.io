@@ -1120,6 +1120,7 @@ footer{
     .description .pre{
         width: 100%; 
         margin: 5px 0;
+        margin-left: 3rem;
         font-size: 1rem;
         color:#06CCC9;
         line-height: 2rem;
@@ -1307,6 +1308,7 @@ footer{
     .description .pre{
         width: 100%; 
         margin: 5px 0;
+        margin-left: 3rem;
         font-size: 1rem;
         color:#06CCC9;
         line-height: 2rem;
@@ -1417,7 +1419,7 @@ footer{
     }
 
     .description .pre{
-        width: 80%;
+        max-width: 80%;
         margin-left: 3rem;
         font-size: 1rem;
         line-height: 2rem;
@@ -1432,14 +1434,14 @@ footer{
         font-size: 5rem;
     }
     .description p{
-        width: 75%;
+        max-width: 100%;
         font-size: 1rem;
         line-height: 1.5rem;
         overflow-wrap: break-word;
         word-wrap: break-word;
     }
     .acquired-skills img{
-        width: 50%;
+        width: 60%;
     }
    
 
