@@ -1117,11 +1117,15 @@ footer{
         margin: 20px 0;
         font-size: 1.2rem;
     }
-    .description pre{
+    .description .pre{
         width: 100%; 
         margin: 5px 0;
         font-size: 1rem;
         color:#06CCC9;
+        line-height: 2rem;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        font-family: monospace;
     }
     .acquired-skills img{
         width: 35%;
@@ -1300,11 +1304,15 @@ footer{
     .acquired-skills img{
         width: 270px;
     }
-    .description pre{
+    .description .pre{
         width: 100%; 
         margin: 5px 0;
         font-size: 1rem;
         color:#06CCC9;
+        line-height: 2rem;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        font-family: monospace;
     }
     /* blog section */
     /* blog section starts here */
