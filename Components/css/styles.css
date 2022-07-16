@@ -168,6 +168,9 @@ ul.nav-links li a:hover{
     font-size: 1.2rem;
     color: #06CCC9;
 }
+.active:hover{
+    color: #e6fefe;
+}
 .social-icons{
     text-align: center;
 }
