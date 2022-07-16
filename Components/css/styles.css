@@ -38,7 +38,7 @@ body{
     --contact-btn:#06CCC9;
     --theme-ball:#06CCC9;
     --anchor-color: #EAEBED;
-    --check_eye:#EAEBED;
+    --check-eye:#EAEBED;
 
     color: #2E424D;
      font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto", 
@@ -72,7 +72,7 @@ body.white{
     --contact-btn:#06CCC9;
     --theme-ball:#06CCC9;
     --anchor-color: #2E424D;
-    --check_eye: #030303;
+    --check-eye: #030303;
 
 
 
@@ -956,7 +956,7 @@ footer{
 }
 
 .check_eye{
-    color: var(--check_eye);
+    color: var(--check-eye);
 }
 
 .checkbox {
