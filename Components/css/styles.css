@@ -821,7 +821,7 @@ input[type="text"], input[type='email']{
     border: none;
     background: var(--contact-text-area);
     padding: 5px 20px;
-    border: 1.5px solid #06CCC9;
+    border-bottom: 2px solid #06CCC9;
     color: #EAEBED;
 }
 #text{
@@ -831,7 +831,7 @@ input[type="text"], input[type='email']{
     border: none;
     background: var(--contact-text-area);
     padding: 5px 20px;
-    border: 1.5px solid #06CCC9;
+    border-bottom: 2px solid #06CCC9;
     color: #EAEBED;
 }
 #msg{
@@ -841,7 +841,7 @@ input[type="text"], input[type='email']{
     border: none;
     background: var(--contact-text-area);
     padding: 5px 20px;
-    border: 1.5px solid #06CCC9;
+    border-bottom: 2px solid #06CCC9;
     color: #EAEBED;
 }
 textarea{
@@ -852,7 +852,7 @@ textarea{
     border: none;
     padding: 20px;
     resize: none;
-    border: 1.5px solid #06CCC9;
+    border-bottom: 2px solid #06CCC9;
     color: #EAEBED;
 
 }
