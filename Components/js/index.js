@@ -15,7 +15,7 @@ const showIcons = document.querySelector('.social-icons');
 const checkbox = document.getElementById('checkbox');
 
 checkbox.addEventListener('change', ()=>{
-  document.body.classList.toggle('white');
+  document.body.classList.toggle('black');
 })
 
 

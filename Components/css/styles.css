@@ -15,40 +15,6 @@ html{
   
 }
 body{
-    --body-bg-color: #1d1d1d;
-    --header-bg-color:#1d1d1d;
-    --text-white: #EAEBED;
-    --logo-color:#06CCC9;
-    --about-text-h2: #EAEBED;
-    --section1-job-color:#EAEBED;
-    --switch-btn:#EAEBED;
-    --mystory-p: #EAEBED;
-    --myabout-h1:#3a3939;
-    --bg-section-text-h1: #3a3939;
-    --description-p: #EAEBED;
-    --blog-heading-p: #EAEBED;
-    --blog-wrapper: #242424;
-    --blog-wrapper-header-h3:#EAEBED;
-    --blog-wrapper-h4:#01f1ed86;
-    --blog-wrapper-shadow: #3131315c;
-    --blog-section-bg-h1: #eaebed78;
-    --blog-wrapper-p: #9d9d9d;
-    --blog-wrapper-border: #2E424D;
-    --contact-section-p: #EAEBED;
-    --contact-btn:#06CCC9;
-    --theme-ball:#06CCC9;
-    --anchor-color: #EAEBED;
-    --check-eye:#EAEBED;
-
-    color: #2E424D;
-     font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto", 
-   "Oxygen","Ubuntu","Helvetica Neue", Arial, sans-serif; 
-
-    background: var(--body-bg-color);
-}
-
-/*Dark theme colors*/
-body.white{
     --body-bg-color: #EAEBED;
     --header-bg-color:#1d1d1d;
     --text-white: #030303;
@@ -73,16 +39,54 @@ body.white{
     --theme-ball:#06CCC9;
     --anchor-color: #030303;
     --check-eye: #030303;
+    --contact-text-area: #4e4d4d;
 
 
 
     color: #2E424D;
-     font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto", 
-   "Oxygen","Ubuntu","Helvetica Neue", Arial, sans-serif; 
+    font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto", 
+    "Oxygen","Ubuntu","Helvetica Neue", Arial, sans-serif; 
+    width: 100%;
+    background: var(--body-bg-color);
+
+}
+
+
+/*Dark theme colors*/
+body.black{
+    --body-bg-color: #1d1d1d;
+    --header-bg-color:#1d1d1d;
+    --text-white: #EAEBED;
+    --logo-color:#06CCC9;
+    --about-text-h2: #EAEBED;
+    --section1-job-color:#EAEBED;
+    --switch-btn:#EAEBED;
+    --mystory-p: #EAEBED;
+    --myabout-h1:#3a3939;
+    --bg-section-text-h1: #3a3939;
+    --description-p: #EAEBED;
+    --blog-heading-p: #EAEBED;
+    --blog-wrapper: #242424;
+    --blog-wrapper-header-h3:#EAEBED;
+    --blog-wrapper-h4:#01f1ed86;
+    --blog-wrapper-shadow: #3131315c;
+    --blog-section-bg-h1: #eaebed78;
+    --blog-wrapper-p: #9d9d9d;
+    --blog-wrapper-border: #2E424D;
+    --contact-section-p: #EAEBED;
+    --contact-btn:#06CCC9;
+    --theme-ball:#06CCC9;
+    --anchor-color: #EAEBED;
+    --check-eye:#EAEBED;
+    --contact-text-area:#242424;
+
+
+    color: #2E424D;
+    font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto", 
+    "Oxygen","Ubuntu","Helvetica Neue", Arial, sans-serif; 
     width: 100%;
     background: var(--body-bg-color);
 }
-
 
 
 
@@ -91,7 +95,7 @@ header{
     border-bottom: 1px solid #06ccc970;
     background: var(--header-bg-color);
     height: auto;
-    position: fixed;
+    position:absolute;
     width: 100%;
     left: 0;
     top: 0;
@@ -807,16 +811,17 @@ ul.nav-links li a:hover{
 form{
     width: 100%;
     line-height: 4.5rem;
-    font-family: 'Roboto', sans-serif;  
+    font-family: 'Roboto', sans-serif;
+
 }
 input[type="text"], input[type='email']{
     width: 100%;
     height: 50px;
     outline: none;
     border: none;
-    background: #3a3939;
+    background: var(--contact-text-area);
     padding: 5px 20px;
-    border-right: 1px solid #06CCC9;
+    border: 1.5px solid #06CCC9;
     color: #EAEBED;
 }
 #text{
@@ -824,9 +829,9 @@ input[type="text"], input[type='email']{
     height: 50px;
     outline: none;
     border: none;
-    background: #3a3939;
+    background: var(--contact-text-area);
     padding: 5px 20px;
-    border-right: 1px solid #06CCC9;
+    border: 1.5px solid #06CCC9;
     color: #EAEBED;
 }
 #msg{
@@ -834,20 +839,21 @@ input[type="text"], input[type='email']{
     height: 100px;
     outline: none;
     border: none;
-    background: #3a3939;
+    background: var(--contact-text-area);
     padding: 5px 20px;
-    border-right: 1px solid #06CCC9;
+    border: 1.5px solid #06CCC9;
     color: #EAEBED;
 }
 textarea{
     width: 100%;
     height: 40vh;
-    background: #3a3939;
+    background: var(--contact-text-area);
     outline: none;
     border: none;
     padding: 20px;
-    color: #EAEBED;
     resize: none;
+    border: 1.5px solid #06CCC9;
+    color: #EAEBED;
 
 }
 
@@ -988,14 +994,14 @@ footer{
     background-color: var(--theme-ball);
     position: absolute;
     top: 2px;
-    left: 2px;
+    right: 2px;
     border-radius: 50%;
     transition: transform 0.2s linear;
 }
   
 /*  target the elemenent after the label*/
 .checkbox:checked + .label .ball{
-    transform: translateX(24px);
+    transform: translateX(-24px);
 }
   
 .fa-moon {
