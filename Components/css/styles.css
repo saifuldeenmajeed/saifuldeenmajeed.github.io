@@ -1413,23 +1413,13 @@ footer{
         margin-left: 47%;
     }
 
-    .hero-img img{
-        width: 35%;
-        height: auto;
-        position: absolute;
-        right: 50px;
-        bottom: 12rem;
-        display: block;
-    }
 }
 
 
 
 /* from 500 pixels and max */
 @media screen and (max-width: 768px){
-    .hero-img img{
-        display: none;
-    }
+
     .logo{
         margin-left: 5rem;
     }
