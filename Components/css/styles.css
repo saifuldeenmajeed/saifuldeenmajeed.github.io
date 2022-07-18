@@ -152,9 +152,10 @@ ul.nav-links li{
     text-align: center;
 }
 ul.nav-links li .theme{
-    margin:auto;
- 
+    margin: none;
+    
 }
+
 ul.nav-links li a{
     text-decoration: none;
     color: #EAEBED;
@@ -1452,7 +1453,7 @@ footer{
 
     ul.nav-links li .theme{
         margin:0;
-        margin-left: 47%;
+        margin-left: 45%;
     }
 
     .section-2::after{
