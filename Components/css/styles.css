@@ -117,8 +117,6 @@ nav{
 }
 
 
-
-
 .logo{
     width: 30px;
     height: 50px;
@@ -164,6 +162,8 @@ ul.nav-links li a{
     font-weight: 400;
     letter-spacing: 1px;
 }
+
+
 ul.nav-links li a:hover{
     color: var(--logo-color);
 }
@@ -199,6 +199,10 @@ ul.nav-links li a:hover{
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
 }
+
+@media screen and (min-width: 768px){.resume_mobileview{display:none;}}
+
+
 .resume:hover{
     transform: scale(0.8);
     background: var(--logo-color);
@@ -1049,6 +1053,8 @@ footer{
     .resume{
         display: block;
     }
+
+
     .social-icons{
         display: none;
     }
