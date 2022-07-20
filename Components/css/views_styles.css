@@ -15,33 +15,8 @@ html{
     scrollbar-color: #06ccc9;
   
 }
-body{
-    --body-bg-color: #1d1d1d;
-    --header-bg-color:#1d1d1d;
-    --text-white: #EAEBED;
-    --logo-color:#06CCC9;
-    --PrjInfo_Headings: #EAEBED;
-    --switch-btn:#EAEBED;
-    --contact-btn:#06CCC9;
-    --theme-ball:#06CCC9;
-    --anchor-color: #f1f1f1;
-    --main-bg: #ffffff;
-    --tab-checked: #555;
-    --label-hover: #888;
-    --label-normal: #bbb;
-    --p-font-color: #2E424D;
-
-    
-    color: #2E424D;
-     font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto", 
-   "Oxygen","Ubuntu","Helvetica Neue", Arial, sans-serif; 
-
-    background: var(--body-bg-color);
-}
-
-/*Dark theme colors*/
-body.white{
-    --body-bg-color: #EAEBED;
+body.dark{
+    --body-bg-color: url(../images/white_pattern_bg2.png);
     --header-bg-color:#1d1d1d;
     --text-white: #030303;
     --logo-color:#06CCC9;
@@ -56,6 +31,31 @@ body.white{
     --label-hover: #ccc;
     --label-normal: #EAEBED;
     --p-font-color: #EAEBED;
+    
+    color: #2E424D;
+     font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto", 
+   "Oxygen","Ubuntu","Helvetica Neue", Arial, sans-serif; 
+
+    background: var(--body-bg-color);
+}
+
+/*Dark theme colors*/
+body{
+    --body-bg-color: url(../images/dark_pattern_bg2.png);
+    --header-bg-color:#1d1d1d;
+    --text-white: #EAEBED;
+    --logo-color:#06CCC9;
+    --PrjInfo_Headings: #EAEBED;
+    --switch-btn:#EAEBED;
+    --contact-btn:#06CCC9;
+    --theme-ball:#06CCC9;
+    --anchor-color: #f1f1f1;
+    --main-bg: #ffffff;
+    --tab-checked: #555;
+    --label-hover: #888;
+    --label-normal: #bbb;
+    --p-font-color: #2E424D;
+
 
 
 
@@ -67,18 +67,19 @@ body.white{
 }
 
 
-
 /* header starts here */
 header{
     border-bottom: 1px solid #06ccc970;
     background: var(--header-bg-color);
     height: auto;
-    position: fixed;
+    position:absolute;
     width: 100%;
     left: 0;
     top: 0;
     z-index: 3;
 }
+
+
 
 .nav-center{
     width: 90%;
@@ -141,12 +142,21 @@ ul.nav-links li a{
 ul.nav-links li a:hover{
     color: var(--logo-color);
 }
-
-.active{
-    font-size: 1.2rem;
-    color: #06CCC9;
+ul.nav-links li a::before{
+    transform: none;
+    transition: none;
 }
 
+
+
+.active{
+    font-size: 1.5rem;
+    margin: auto;
+    color: #06CCC9;
+}
+.active:hover{
+    color: #e6fefe;
+}
 
 h1 {
   padding: 50px 0;
@@ -267,10 +277,6 @@ input:checked + label {
 /* header ends here i repeat */
 /* section 1 starts here*/
 
-.section-1{
-    position: absolute;
-}
-
 .container{
     height: 250px;
     width: 100%;
@@ -343,7 +349,7 @@ input:checked + label {
 footer{
     width: 100%;
     margin-top: 100px;
-    height: 8vh;
+    height: 5vh;
     background: #141414;
     display: grid;
     place-items: center;
@@ -360,13 +366,12 @@ footer{
     color:#adabab;
 }
 
-
 .checkbox {
     opacity: 0;
     position: absolute;
     padding: 1rem 0;
 
-  }
+}
   
 .label {
     width: 50px;
@@ -387,14 +392,14 @@ footer{
     background-color: var(--theme-ball);
     position: absolute;
     top: 2px;
-    left: 2px;
+    right: 2px;
     border-radius: 50%;
     transition: transform 0.2s linear;
 }
   
 /*  target the elemenent after the label*/
 .checkbox:checked + .label .ball{
-    transform: translateX(24px);
+    transform: translateX(-24px);
 }
   
 .fa-moon {
@@ -404,11 +409,6 @@ footer{
 .fa-sun {
     color: #ffee00;
 }
-
-.anchor{
-    background-color: var(--anchor-color);
-}
-
 
 
 /* contact me button */

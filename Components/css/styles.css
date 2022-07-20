@@ -56,7 +56,7 @@ body{
 
 
 /*Dark theme colors*/
-body.black{
+body.dark{
     --body-bg-color:  url(../images/dark_pattern_bg2.png);
     --header-bg-color:#1d1d1d;
     --text-white: #EAEBED;
@@ -211,10 +211,6 @@ ul.nav-links li a:hover{
 
 .resume_mobileview{display:none;}
 
-
-@media screen and (min-width: 1023){
-
-}
 
 
 .resume:hover{
@@ -1150,7 +1146,7 @@ input[type="submit"]:hover{
 footer{
     width: 100%;
     margin-top: 100px;
-    height: 8vh;
+    height: 5vh;
     background: #141414;
     display: grid;
     place-items: center;
