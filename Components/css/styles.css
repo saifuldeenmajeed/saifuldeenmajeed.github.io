@@ -15,7 +15,7 @@ html{
   
 }
 body{
-    --body-bg-color: #EAEBED;
+    --body-bg-color: url(../images/white_pattern_bg2.png);
     --header-bg-color:#1d1d1d;
     --text-white: #030303;
     --logo-color:#06CCC9;
@@ -40,6 +40,8 @@ body{
     --anchor-color: #030303;
     --check-eye: #030303;
     --contact-text-area: #4e4d4d;
+    --separator-line-gradient: linear-gradient(90deg, rgba(101,226,224,1) 0%, rgb(9, 47, 45) 50%, rgba(101,226,224,1) 100%);
+    --border-animation: #242424;
 
 
 
@@ -54,7 +56,7 @@ body{
 
 /*Dark theme colors*/
 body.black{
-    --body-bg-color: #1d1d1d;
+    --body-bg-color:  url(../images/dark_pattern_bg2.png);
     --header-bg-color:#1d1d1d;
     --text-white: #EAEBED;
     --logo-color:#06CCC9;
@@ -79,6 +81,9 @@ body.black{
     --anchor-color: #EAEBED;
     --check-eye:#EAEBED;
     --contact-text-area:#242424;
+    --separator-line-gradient: linear-gradient(90deg, rgba(91,194,192,1) 0%, rgba(250,250,250,1) 50%, rgba(91,194,192,1) 100%);
+    --border-animation: #EAEBED;
+
 
 
     color: #2E424D;
@@ -225,12 +230,47 @@ ul.nav-links li a:hover{
 .section-1::after{
     content: '';
     position: absolute;
-    width: 100%;
-    height: 5px;
-    background: #3a393993;
+    width: 80%;
+
+    height: 2px;
+    background: var(--separator-line-gradient);
+    border-top-right-radius: 15PX;
+    border-bottom-right-radius: 15PX;
+    border-top-left-radius: 15PX;
+    border-bottom-left-radius: 15PX;
+
     left: 0;
     bottom: 0;
+    margin-left: 10%;
+    background-size: 500% 500%;
+
+    -webkit-animation: sepratoranimation 4s ease infinite;
+    -moz-animation: sepratoranimation 4s ease infinite;
+    -o-animation: sepratoranimation 4s ease infinite;
+    animation: sepratoranimation 4s ease infinite;
 }
+
+@-webkit-keyframes sepratoranimation {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@-moz-keyframes sepratoranimation {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@-o-keyframes sepratoranimation {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@keyframes sepratoranimation {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+
 
 .container{
     height: 100vh;
@@ -417,14 +457,14 @@ ul.nav-links li a:hover{
 .logo-animation li{
     position: absolute;
     bottom: -150px;
-    background: #5B8291;
+    background: #88c6c5;
     width: 30px;
     height: 30px; 
-    animation: square 15s infinite;
+    animation: square 25s infinite;
     transition-timing-function: linear;
     -webkit-transition-timing-function: linear;
-    -webkit-animation: square 15s infinite;
-    -o-animation: square 15s infinite;
+    -webkit-animation: square 25s infinite;
+    -o-animation: square 25s infinite;
 }
 .logo-animation li:nth-child(1){
     left: 25%;
@@ -521,11 +561,46 @@ ul.nav-links li a:hover{
     content: '';
     position: absolute;
     width: 100%;
-    height: 5px;
-    background: #3a393993;
+
+    height: 2px;
+    background: var(--separator-line-gradient);
+    
+    border-top-right-radius: 15PX;
+    border-bottom-right-radius: 15PX;
+    border-top-left-radius: 15PX;
+    border-bottom-left-radius: 15PX;
+    
     left: 0;
     bottom: -100px;
+
+    background-size: 500% 500%;
+    -webkit-animation: sepratoranimation 4s ease infinite;
+    -moz-animation: sepratoranimation 4s ease infinite;
+    -o-animation: sepratoranimation 4s ease infinite;
+    animation: sepratoranimation 4s ease infinite;
 }
+
+@-webkit-keyframes sepratoranimation {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@-moz-keyframes sepratoranimation {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@-o-keyframes sepratoranimation {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@keyframes sepratoranimation {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+
 .my-about-wrapper .about{
     font-size: 5rem;
     color: var(--bg-section-text-h1);
@@ -596,18 +671,55 @@ ul.nav-links li a:hover{
 
 .section-3{
     width: 85%;
-    margin: 100px auto;
+    margin: 85px auto;
     position: relative;
 }
 .section-3::after{
     content: '';
     position: absolute;
-    width: 100%;
-    height: 5px;
-    background: #3a393993;
+    width: 94%;
+    
+    height: 2px;
+    background: var(--separator-line-gradient);
+    border-top-right-radius: 15PX;
+    border-bottom-right-radius: 15PX;
+    border-top-left-radius: 15PX;
+    border-bottom-left-radius: 15PX;
+    
     left: 0;
     bottom: -10px;
+    margin-left: 3%;
+
+    
+    background-size: 500% 500%;
+    -webkit-animation: sepratoranimation 4s ease infinite;
+    -moz-animation: sepratoranimation 4s ease infinite;
+    -o-animation: sepratoranimation 4s ease infinite;
+    animation: sepratoranimation 4s ease infinite;
 }
+
+@-webkit-keyframes sepratoranimation {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@-moz-keyframes sepratoranimation {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@-o-keyframes sepratoranimation {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@keyframes sepratoranimation {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+
+
 .text-skills{
     position: absolute;
     font-size: 7rem;
@@ -659,20 +771,54 @@ ul.nav-links li a:hover{
 /* blog section starts here */
 
 .section-4{
-    width: 90%;
+    width: 85%;
     margin: auto;
     position: relative;
 }
 .section-4::after{
     content: '';
     position: absolute;
-    width: 100%;
-    height: 5px;
-    background: #3a393993;
-    left: 0;
-    bottom: -100px;
+    width: 94%;
+    bottom: -90px;
+    margin-left: 3%;
     
+    height: 2px;
+    background: var(--separator-line-gradient);
+    border-top-right-radius: 15PX;
+    border-bottom-right-radius: 15PX;
+    border-top-left-radius: 15PX;
+    border-bottom-left-radius: 15PX;
+
+    
+    background-size: 500% 500%;
+    -webkit-animation: sepratoranimation 4s ease infinite;
+    -moz-animation: sepratoranimation 4s ease infinite;
+    -o-animation: sepratoranimation 4s ease infinite;
+    animation: sepratoranimation 4s ease infinite;
 }
+
+@-webkit-keyframes sepratoranimation {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@-moz-keyframes sepratoranimation {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@-o-keyframes sepratoranimation {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@keyframes sepratoranimation {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+
+
 .blog-description{
     width: 100%;
     margin-bottom: 70px;
@@ -719,24 +865,61 @@ ul.nav-links li a:hover{
     width: 100%;
     height: 220px;
     background: var(--blog-wrapper);
-    box-shadow: 0px 0px 16px 10px var(--blog-wrapper-shadow);
+    box-shadow: 10px 10px 16px 10px var(--blog-wrapper-shadow);
     display: flex;
     justify-content: center;
     flex-direction: column;
     transition: border .5s linear;
     cursor: pointer;
     padding: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     position: relative;
-    border-color: var(--blog-wrapper-border);
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 3%;
-    
+
+  }
+
+  .blog-wrapper:hover{
+    border-width: 0;
 }
-.blog-wrapper:hover{
-    box-shadow: 0px 0px 16px 10px #00e7f360;
-}
+
+  .blog-wrapper:before,
+  .blog-wrapper:after{
+    position: absolute;
+    content: "";
+    transition: all .75s;
+  }
+  
+  .blog-wrapper:before{
+    border-bottom: 3px solid var(--border-animation);
+    border-left: 3px solid var(--border-animation);
+    width: 10%;
+    height: 33%;
+    left: 0;
+    bottom: 0;
+  
+  }
+ 
+  
+  .blog-wrapper:after{
+    border-top: 3px solid #00e7f360;
+    border-right: 3px solid #00e7f360;
+    width: 10%;
+    height: 33%;
+    top: 0;
+    right: 0;
+  
+  }
+  
+  .blog-wrapper:hover:before{
+      width: 102%;
+      height: 105%;
+  }
+  
+  .blog-wrapper:hover:after{
+    width: 102%;
+    height: 105%;
+  }
+
+  
 
 .blog-wrapper a{
     text-decoration: none;
@@ -775,6 +958,21 @@ ul.nav-links li a:hover{
     text-align: justify;
 
 }
+
+
+.shape {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    fill: transparent;
+    stroke: #19f6e8;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  }
+.shape:hover {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+  }
 
 /* blog section ends here */
 /* contact section starts here */
@@ -1547,7 +1745,7 @@ footer{
     }
     .blog-wrapper{
         width: 100%;
-        margin: 10px;
+        margin: 15px;
     }
     .blog-wrapper h3{
         font-size: 1.5rem;
