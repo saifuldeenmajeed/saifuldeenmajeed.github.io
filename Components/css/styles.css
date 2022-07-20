@@ -226,6 +226,7 @@ ul.nav-links li a:hover{
 /* header ends here i repeat */
 /* section 1 starts here*/
 
+
 .section-1{
     position: relative;
 }
@@ -879,17 +880,14 @@ ul.nav-links li a:hover{
 
   }
 
-  .blog-wrapper:hover{
-    border-width: 0;
+
+.blog-wrapper:before,
+.blog-wrapper:after{
+    position: absolute;
+    content:attr();
+    transition: all .75s;
 }
 
-  .blog-wrapper:before,
-  .blog-wrapper:after{
-    position: absolute;
-    content: "";
-    transition: all .75s;
-  }
-  
   .blog-wrapper:before{
     border-bottom: 3px solid var(--border-animation);
     border-left: 3px solid var(--border-animation);
@@ -921,7 +919,6 @@ ul.nav-links li a:hover{
     height: 105%;
   }
 
-  
 
 .blog-wrapper a{
     text-decoration: none;
@@ -961,20 +958,6 @@ ul.nav-links li a:hover{
 
 }
 
-
-.shape {
-    stroke-dasharray: 140 540;
-    stroke-dashoffset: -474;
-    stroke-width: 8px;
-    fill: transparent;
-    stroke: #19f6e8;
-    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
-  }
-.shape:hover {
-    stroke-width: 2px;
-    stroke-dashoffset: 0;
-    stroke-dasharray: 760;
-  }
 
 /* blog section ends here */
 /* contact section starts here */
