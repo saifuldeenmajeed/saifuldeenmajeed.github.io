@@ -39,7 +39,8 @@ body{
     --theme-ball:#06CCC9;
     --anchor-color: #030303;
     --check-eye: #030303;
-    --contact-text-area: #4e4d4d;
+    --contact-text-area: #e7e7e7;
+    --contact-form-writing-font-color: #242424;
     --separator-line-gradient: linear-gradient(90deg, rgba(101,226,224,1) 0%, rgb(9, 47, 45) 50%, rgba(101,226,224,1) 100%);
     --border-animation: #242424;
 
@@ -81,6 +82,7 @@ body.black{
     --anchor-color: #EAEBED;
     --check-eye:#EAEBED;
     --contact-text-area:#242424;
+    --contact-form-writing-font-color: #EAEBED;
     --separator-line-gradient: linear-gradient(90deg, rgba(91,194,192,1) 0%, rgba(250,250,250,1) 50%, rgba(91,194,192,1) 100%);
     --border-animation: #EAEBED;
 
@@ -1031,7 +1033,7 @@ input[type="text"], input[type='email']{
     background: var(--contact-text-area);
     padding: 5px 20px;
     border-bottom: 2px solid #06CCC9;
-    color: #EAEBED;
+    color: var(--contact-form-writing-font-color);
 }
 #text{
     width: 100%;
@@ -1041,7 +1043,7 @@ input[type="text"], input[type='email']{
     background: var(--contact-text-area);
     padding: 5px 20px;
     border-bottom: 2px solid #06CCC9;
-    color: #EAEBED;
+    color: var(--contact-form-writing-font-color);
 }
 #msg{
     width: 100%;
@@ -1051,7 +1053,7 @@ input[type="text"], input[type='email']{
     background: var(--contact-text-area);
     padding: 5px 20px;
     border-bottom: 2px solid #06CCC9;
-    color: #EAEBED;
+    color: var(--contact-form-writing-font-color);
 }
 textarea{
     width: 100%;
@@ -1062,7 +1064,7 @@ textarea{
     padding: 20px;
     resize: none;
     border-bottom: 2px solid #06CCC9;
-    color: #EAEBED;
+    color: var(--contact-form-writing-font-color);
 
 }
 
