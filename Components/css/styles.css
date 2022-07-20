@@ -884,8 +884,9 @@ ul.nav-links li a:hover{
 .blog-wrapper:before,
 .blog-wrapper:after{
     position: absolute;
-    content:attr();
+    content:"";
     transition: all .75s;
+    pointer-events: none;
 }
 
   .blog-wrapper:before{
@@ -906,6 +907,7 @@ ul.nav-links li a:hover{
     height: 33%;
     top: 0;
     right: 0;
+    pointer-events: none;
   
   }
   
@@ -917,6 +919,7 @@ ul.nav-links li a:hover{
   .blog-wrapper:hover:after{
     width: 102%;
     height: 105%;
+    pointer-events: none;
   }
 
 
