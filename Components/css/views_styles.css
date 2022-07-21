@@ -98,6 +98,9 @@ nav{
     width: 30px;
     height: 50px;
 }
+
+      
+
 /* toggle btn starts here */
 .toggle-icon .fas{
     font-size: 1.5rem;
@@ -473,14 +476,14 @@ footer{
     color: #1d1d1d;
 }
 
-a {
+main a {
     color: #1d1d1d;
     font-weight: 600;
     position: relative;
     text-decoration: none;
   }
   
-  a::before {
+  main a::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -494,11 +497,11 @@ a {
     transition: transform .3s ease-in-out;
   }
   
-  a:hover::before {
+  main a:hover::before {
     transform-origin: left;
     transform: scaleX(1);
   }
-  
+
 
 /* media query */ /* media query for big screens start here */
 
