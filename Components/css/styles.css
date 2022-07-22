@@ -66,7 +66,7 @@ body.dark{
     --switch-btn:#EAEBED;
     --mystory-p: #EAEBED;
     --myabout-h1:#3a3939;
-    --bg-section-text-h1: #3a3939;
+    --bg-section-text-h1: #4f4e4e;
     --description-p: #EAEBED;
     --blog-heading-p: #EAEBED;
     --blog-wrapper: #242424;
@@ -602,8 +602,8 @@ ul.nav-links li a:hover{
 
 .my-about-wrapper .about{
     font-size: 5rem;
-    color: var(--bg-section-text-h1);
-    filter: opacity(0.2);
+    color:var(--bg-section-text-h1);
+    opacity: 0.3;
 
 }
 .my-self{
@@ -670,7 +670,7 @@ ul.nav-links li a:hover{
 
 .section-3{
     width: 85%;
-    margin: 85px auto;
+    margin: 70px auto 0;
     position: relative;
 }
 .section-3::after{
@@ -721,9 +721,10 @@ ul.nav-links li a:hover{
 
 .text-skills{
     position: absolute;
-    font-size: 7rem;
+    left:20px;
+    font-size: 6rem;
     color: var(--bg-section-text-h1);
-    filter: opacity(0.2);
+    opacity: 0.3;
 }
 .acquired-skills{
     min-height: 100vh;
@@ -771,7 +772,7 @@ ul.nav-links li a:hover{
 
 .section-4{
     width: 85%;
-    margin: auto;
+    margin: 70px auto 0;
     position: relative;
 }
 .section-4::after{
@@ -844,14 +845,13 @@ ul.nav-links li a:hover{
     flex-wrap: wrap;
 }
 .blog-section h1{
-    font-size: 9rem;
+    font-size: 7rem;
     position: absolute;
     top: -130px;
-    left: 0;
+    left: 20px;
     z-index: -1;
     color:var(--bg-section-text-h1);
-    filter: opacity(0.2);
-
+    opacity: 0.3;
 }
 .blog-lang{
     font-size: 1rem;
@@ -988,13 +988,15 @@ ul.nav-links li a:hover{
     color: #06CCC9;
 }
 .contact-section h1{
-    font-size: 7rem;
-    color: #3a3939;
+    font-size: 15rem;
     position: absolute;
-    left: -100px;
+    margin-left: 130px;
+    top: 0;
     z-index: -999;
-    opacity: 0.5;
+    color:var(--bg-section-text-h1);
+    opacity: 0.3;
 }
+
 .contact-form-wrapper{
     display: flex;
     justify-content: space-between;
@@ -1218,6 +1220,9 @@ footer{
         align-items: center;
         justify-content: center;
     }
+    .logo{
+        margin-left: -1rem;
+    }
     .nav-center{
         max-width: 1190px;
         display: flex;
@@ -1308,11 +1313,12 @@ footer{
     /* section 3 starts here */
     .section-3{
         width: 85%;
-        margin: 150px auto 70px;
+        margin: 200px auto 70px;
         min-height: 100vh;
     }
     .text-skills{
-        font-size: 20rem; 
+        font-size: 15rem;
+        top: 5px; 
     }
     .acquired-skills{
         justify-content: space-between;
@@ -1359,8 +1365,8 @@ footer{
         font-size: 1.2rem;
     }
     .blog-section h1{
-        font-size: 15rem;
-        top: -250px;
+        font-size: 12rem;
+        top: -150px;
     }
     .blog-wrapper{
         width: 45%;
@@ -1396,8 +1402,6 @@ footer{
     }
     .contact-section h1{
         font-size: 13rem;
-        left: -150px;
-        top: 200px;
     }
     
     .contact-form-wrapper{
@@ -1450,7 +1454,7 @@ footer{
 @media screen and (max-width: 1024px){
 
     .logo{
-        margin-left: 5rem;
+        margin-left: 3rem;
     }
     .nav-center{
         width: 100%;
@@ -1479,7 +1483,10 @@ footer{
         max-width: 100%;
     }
     /* section 2 starts here */
-
+    .contact-section h1{
+        font-size: 9rem;
+    }
+    
     .my-about-wrapper .about{
         font-size: 8rem;
         position: absolute;
@@ -1544,8 +1551,8 @@ footer{
         font-size: 1.2rem;
     }
     .blog-section h1{
-        font-size: 12rem;
-        top: -250px;
+        font-size: 8rem;
+        top: -210px;
     }
     .blog-wrapper{
         width: 45%;
@@ -1603,7 +1610,7 @@ footer{
 @media screen and (max-width: 768px){
 
     .logo{
-        margin-left: 5rem;
+        margin-left: 3rem;
     }
     .blog-description{
         width: 100%;
@@ -1618,7 +1625,12 @@ footer{
     .blog-heading h3{
         font-size: 1.5rem;
     }
-
+    .contact-section h1{
+        font-size: 5rem;
+        top:20px;
+        margin-left: -10px;
+    }
+    
     .resume_mobileview{
         display:block;
     }
@@ -1631,10 +1643,7 @@ footer{
     .section-2::after{
         bottom:0;
     }
-    .section-4::after{
-        display: none;
-    }
-    
+
     .section-3{
         max-width:100%;
         color:#06CCC9;
@@ -1672,7 +1681,7 @@ footer{
         width: 100%;
     }
     .about-desc {
-        margin-top: 15px;
+        margin-top: 12px;
     }
     .about-desc h2{
         font-size: 2.7rem;
@@ -1700,12 +1709,11 @@ footer{
     /* section 2 starts here */
 
     .my-about-wrapper .about{
-        font-size: 5rem;
-        position: absolute;
+        font-size: 0;
     }
     .my-self{
         width: 100%;
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
     .my-self::before, .my-self::after{
         display: none;
@@ -1717,7 +1725,7 @@ footer{
         line-height: 1.5rem;
     }
     .para1{
-        margin: 50px 0 30px;
+        margin: 10px 0 30px;
     }
     .para1 img{
         display: none;
@@ -1725,7 +1733,10 @@ footer{
     /* blog section */
 
     .blog-section h1{
-        font-size: 5rem;
+        font-size: 0;
+    }
+    .text-skills{
+        font-size: 0;
     }
     .blog-wrapper{
         width: 100%;
