@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    scrollbar-color: #06ccc9;
+  
+}
+body.dark{
+    --body-bg-color: url(../images/white_pattern_bg2.png);
+    --header-bg-color:#1d1d1d;
+    --text-white: #030303;
+    --logo-color:#06CCC9;
+    --PrjInfo_Headings: #2E424D;
+    --switch-btn:#2E424D;
+    --contact-btn:#06CCC9;
+    --theme-ball:#06CCC9;
+    --anchor-color: #2E424D;
+    --main-bg: #1d1d1dd1;
+    --tabs-headings:#EAEBED;
+    --tab-checked: #d2d1d1;
+    --label-hover: #ccc;
+    --label-normal: #EAEBED;
+    --p-font-color: #EAEBED;
+    
+    color: #2E424D;
+     font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto", 
+   "Oxygen","Ubuntu","Helvetica Neue", Arial, sans-serif; 
+
+    background: var(--body-bg-color);
+}
+
+/*Dark theme colors*/
+body{
+    --body-bg-color: url(../images/dark_pattern_bg2.png);
+    --header-bg-color:#1d1d1d;
+    --text-white: #EAEBED;
+    --logo-color:#06CCC9;
+    --PrjInfo_Headings: #EAEBED;
+    --switch-btn:#EAEBED;
+    --contact-btn:#06CCC9;
+    --theme-ball:#06CCC9;
+    --anchor-color: #f1f1f1;
+    --main-bg: #ffffff;
+    --tab-checked: #555;
+    --label-hover: #888;
+    --label-normal: #bbb;
+    --p-font-color: #2E424D;
+
+
+
+
+    color: #2E424D;
+     font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto", 
+   "Oxygen","Ubuntu","Helvetica Neue", Arial, sans-serif; 
+    width: 100%;
+    background: var(--body-bg-color);
+}
+
+
+/* header starts here */
+header{
+    border-bottom: 1px solid #06ccc970;
+    background: var(--header-bg-color);
+    height: auto;
+    position:absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+
+
+
+.nav-center{
+    width: 90%;
+    margin: auto;
+}
+nav{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.logo{
+    width: 30px;
+    height: 50px;
+}
+/* toggle btn starts here */
+.toggle-icon .fas{
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s linear;
+    margin-right: 15px;
+}
+
+.toggle-icon .fas:hover{
+    transform: scale(0.8) rotate(-45deg);
+    transition: all .3s linear;
+}
+.toggle-icon .times{
+    display: none;
+}
+
+/* toggle btn ends here */
+.links-container{
+    height: 0;
+    overflow: hidden;
+    transition: all .5s linear;
+}
+ul.nav-links{
+    list-style: none; 
+}
+ul.nav-links li{
+    padding: 1rem 0;
+    text-align: center;
+}
+ul.nav-links li .theme{
+    margin:0;
+    margin-left: 47%;
+}
+ul.nav-links li a{
+    text-decoration: none;
+    color: #EAEBED;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+ul.nav-links li a:hover{
+    color: var(--logo-color);
+}
+ul.nav-links li a::before{
+    transform: none;
+    transition: none;
+}
+
+
+
+.active{
+    font-size: 1.5rem;
+    margin: auto;
+    color: #06CCC9;
+}
+.active:hover{
+    color: #e6fefe;
+}
+
+h1 {
+  padding: 50px 0;
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  margin: 0 0 20px;
+  margin-top: 10px;
+  line-height: 1.7;
+  text-align: justify;
+  color: var(--p-font-color);
+  
+}
+
+main {
+  min-width: 320px;
+  max-width: 800px;
+  padding: 50px;
+  margin: 0 auto;
+  margin-top: 150px;
+  background: var(--main-bg);
+}
+
+section {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+}
+
+input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--label-normal);
+  border: 1px solid transparent;
+}
+
+label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+label[for*='1']:before {
+  content: '\f18d';
+}
+
+label[for*='2']:before {
+  content: '\f121';
+}
+
+label[for*='3']:before {
+  content: '\f085';
+}
+
+label[for*='4']:before {
+  content: '\f00d  | \f00c';
+}
+label[for*='5']:before {
+    content: '\f071';
+  }
+
+label:hover {
+  color: var(--label-hover);
+  cursor: pointer;
+}
+
+input:checked + label {
+  color: var(--tab-checked);
+  border: 1px solid #ddd;
+  border-top: 2px solid #06CCC9;
+  border-bottom: 1px solid #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5 {
+  display: block;
+}
+
+.progress_img{
+    object-fit:contain;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 20%;
+}
+
+
+@media screen and (max-width: 650px) {
+ main label {
+    font-size: 0;
+  }
+
+ main  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  main label {
+    padding: 15px;
+  }
+}
+
+/* header ends here i repeat */
+/* section 1 starts here*/
+
+.container{
+    height: 250px;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: absloute;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.course-preview {
+	background-color:transparent;
+	padding: 15px;
+	max-width: 100%;
+    border: 3px solid #0adac5;
+    width: 100%;
+    position: relative;
+
+}
+
+.course-preview img {
+	display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.course-info {
+	padding: 20px;
+	position: relative;
+	width: 100%;
+}
+
+
+.demo{
+    object-fit:contain;
+    left:0;
+    width: 30%;
+    height: 70vh;
+    border: #06CCC9;
+    border-width: 2px;
+    border-style: dashed;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 15rem;
+    vertical-align: middle;
+}
+.demo img{
+    object-fit:cover;
+    width: 100%;
+    height: auto;
+}
+
+
+@keyframes square {
+    0%{
+        opacity: 0;
+        transform: translateY(0) rotate(-45deg);
+    }
+    100%{
+        opacity: 0.5;
+        transform: translateY(-1100px) rotate(-45deg);
+    }
+}
+
+
+/* footer section */
+
+footer{
+    width: 100%;
+    margin-top: 100px;
+    height: 5vh;
+    background: #141414;
+    display: grid;
+    place-items: center;
+    color: #adabab;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+}
+.footer-content span{
+    color: #06CCC9;
+}
+.footer-content p {
+    line-height: 1; 
+    color:#adabab;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+    padding: 1rem 0;
+
+}
+  
+.label {
+    width: 50px;
+    height: 26px;
+    background-color:inherit;
+    display: flex;
+    border-radius:50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    transform: scale(1);
+  }
+  
+.ball {
+    width: 20px;
+    height: 20px;
+    background-color: var(--theme-ball);
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+  
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball{
+    transform: translateX(-24px);
+}
+  
+.fa-moon {
+    color: #EAEBED;
+}
+  
+.fa-sun {
+    color: #ffee00;
+}
+
+
+/* contact me button */
+.contact-button{
+    margin: 25px 0 15px;
+    text-decoration: none;
+    color: #06CCC9;
+    width: 100%;
+    max-width: 100%;
+    line-height: 50px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    position: relative;
+    letter-spacing: 1px;
+}
+.contact-button div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    color: var(--contact-btn);
+}
+.contact-button span.bg{
+    background: #06CCC9;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: -5%;
+    top: 0;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transform: skewX(-19deg);
+    -ms-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+}
+.contact-button:hover span.bg{
+    width: 110%;
+}
+.contact-button span.base{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border: 1px solid #06CCC9;
+}
+.contact-button span.text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: var(--contact-btn);
+}
+.contact-button:hover span.text{
+    color: #1d1d1d;
+}
+
+a {
+    color: #1d1d1d;
+    font-weight: 600;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #06ccc9;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+  
+  a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  
+
+/* media query */ /* media query for big screens start here */
+
+@media screen and (min-width: 1024px){
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-center{
+        max-width: 1190px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .links-container {
+        height: auto !important;
+    }
+    ul.nav-links{
+        display: flex;
+        height: auto;
+    }
+    ul.nav-links li{
+        padding: 0;
+        width: 100px;
+    }
+    .toggle-icon{
+        display: none;
+    }
+    .container{
+        width: 100%;
+    }
+
+}
+
+/* media query for bigger screens ends here i repeat * 100000 */
+
+
+
+/* media query for medium screen starts here */
+
+/* from 500 pixels and max */
+@media screen and (max-width: 1023px) {
+    .logo{
+        margin-left: 5rem;
+    }
+    .nav-center{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    
+}
+
+
+
+/* from 500 pixels and max */
+@media screen and (max-width: 768px){
+
+    .logo{
+        margin-left: 5rem;
+    }
+    .container{
+        width: 100%;
+    }
+    
+}

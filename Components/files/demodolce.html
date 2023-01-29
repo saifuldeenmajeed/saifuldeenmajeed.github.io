@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S. MAJEED | DOLCE DEMO</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo.ico">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/views_styles.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="nav-center">
+            <nav>
+                <a href="../../index.html"><img src="../images/logo.png" alt="logo" class="logo"></a>
+                <!-- toggle btns -->
+                <div class="toggle-icon">
+                    <span class="toggle-btn bars"><i class="fas fa-bars"></i></span>
+                    <span class="toggle-btn times"><i class="fas fa-times"></i></span>
+                </div>
+            </nav>
+
+            <!-- ul container -->
+            <div class="links-container">
+                <div class="nav-link-wrapper">
+                    <ul class="nav-links">
+                        <li>
+                            <a href="../../index.html" class="link">
+                                <i class="fas fa-home active"></i>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <div class="theme">
+                                <input type="checkbox" class="checkbox" id="checkbox">
+                                <label for="checkbox" class="label">
+                                    <i class="fas fa-moon"></i>
+                                    <i class='fas fa-sun'></i>
+                                    <div class='ball'></div>
+                                </label>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                
+            </div>        
+        </div> 
+        <!-- nav center div above -->
+    </header>
+
+
+    <!--Project Details Section Starts here-->
+        <!-- section 1 starts below -->
+        <main>
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label for="tab1">Description</label>
+                
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2">Languages</label>
+                
+            <input id="tab3" type="radio" name="tabs">
+            <label for="tab3">Demo</label>
+                
+            <input id="tab4" type="radio" name="tabs">
+            <label for="tab4">Project Status</label>
+                
+            <section id="content1">
+                <p><strong>Project Title:</strong> <em>Dolce</em></p>
+                <p>
+                    Resturant Ordering Web-Application, where users can view, order, and track their meals. 
+                    The web-app allows users to order their meals and track it's progress as well.</br>
+                    All through an interactive web-based applicaion, that's friendly and easy to use.</br>
+                    Users can sign-in/sign-up to make use of many features, such as tracking their orderes, viewing and re-ordering previous orders, and more.</br>
+                    The system is programmed in ASP.NET core app through Blazor framework, providing a friendly and rich user interface and a quick response time. 
+                </p>
+            </section>
+            
+            <section id="content2">
+                <p>
+                    <strong style="color:#06CCC9;">&#9507;</strong>&nbsp;<strong>Framework:</strong> Blazor</br>
+                    <strong style="color:#06CCC9;">&#9507;</strong>&nbsp;<strong>Backend:</strong> C#</br>
+                    <strong style="color:#06CCC9;">&#9507;</strong>&nbsp;<strong>Frontend:</strong> Html, CSS (Boostrap), JavaScript</br>
+                    <strong style="color:#06CCC9;">&#9507;</strong>&nbsp;<strong>Database:</strong> Entity Frameworks & SQL-Server</br>
+                    
+                </p>
+
+            </section>
+                
+            <section id="content3">
+                <p class="m-1 text-muted">Colors may differ due to file compression.</p>
+
+                <div class="course-preview">
+                    <img src="../images/demos/demo_dolce.gif" alt="ProjectDemo">
+                </div>
+                
+            </section>
+                
+            <section id="content4">
+                <p>
+                    <img class="progress_img" src="../../Components/images/done.png" alt="ProjectStatus=Done">
+                </p>
+                <p>
+                    The project is completed and tested. To view the code, please <a href="../../index.html#contact"> contact</a> the developer.
+                </p>
+            </section>
+            <!-- contact me button -->
+            <a href="../../index.html#projects" class="contact-button">
+                <div>
+                    <span class="bg"></span>
+                    <span class="base"></span>
+                    <span class="text">
+                        Return to Portfolio
+                    </span>
+                </div>
+            </a>
+            
+        </main>
+        
+    <!--Project Details Section Ends here-->
+
+
+    <!-- footer section -->
+    <footer>
+        <div class="footer-content">
+            <p>Copyright &copy; Built By <span><strong><em>Saifuldeen Ali Majeed</em></strong></span> 2022 | All Right Reserved.</p>
+        </div>
+    </footer>
+
+  
+    <!-- scripts are down below -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>                        
+    <script>
+    AOS.init({ duration : 1500, easing: 'ease-in-out'});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="../js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
